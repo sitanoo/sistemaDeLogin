@@ -241,7 +241,57 @@
                     }
                 });
             }
+            return true;
             });
+            
+            //fim do ajax Registro Usuario
+            
+            
+            
+            //Envio de dados via Ajax
+            //Página de login
+            $("#btnEntrar").click(function(e){
+            if(document.querySelector("#formLogin").checkValidity()){
+                e.preventDefault();
+                $.ajax({
+                    url: 'recebe.php',
+                    method: 'post',
+                    data: $('#formLogin').serialize()+'&action=entrar',
+                    success:function(resposta){
+                        $('#alerta').show();
+                        $('#resultado').html(resposta);
+                        
+                    }
+                });
+            }
+            return true;
+            });
+            
+            //fim do ajax Entrar
+            
+            
+            
+            //Envio de dados via Ajax
+            //Página de Gerar Senha
+            $("#btnGerar").click(function(e){
+            if(document.querySelector("#formSenha").checkValidity()){
+                e.preventDefault();
+                $.ajax({
+                    url: 'recebe.php',
+                    method: 'post',
+                    data: $('#formSenha').serialize()+'&action=gerar',
+                    success:function(resposta){
+                        $('#alerta').show();
+                        $('#resultado').html(resposta);
+                        
+                    }
+                });
+            }
+            return true;
+            });
+            
+            //fim do ajax Gerar senha
+            
         });
         /*
 * Translated default messages for the jQuery validation plugin.
