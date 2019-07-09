@@ -97,19 +97,19 @@
                       </div>
                       
                       <div class="form-group">
-                          <input type="text" name="NomeUsuario" class="form-control" placeholder="Nome do Usuário" required minlength="6">   
+                          <input type="text" name="nomeUsuario" class="form-control" placeholder="Nome do Usuário" required minlength="6">   
                       </div>
                       
                       <div class="form-group">
-                          <input type="email" name="EmailUsuario" class="form-control" placeholder="E-mail" required>   
+                          <input type="email" name="emailUsuario" class="form-control" placeholder="E-mail" required>   
                       </div>
                       
                       <div class="form-group">
-                          <input type="password" id="senhaUsuario" class="form-control" placeholder="Senha" required minlength="6">   
+                          <input type="password" id="senhaUsuario" class="form-control" placeholder="Senha" required minlength="6" name="senhaUsuario">   
                       </div>
                       
                       <div class="form-group">
-                          <input type="password" id="senhaUsuarioConfirmar" class="form-control" placeholder="Confirmar a Senha" required minlength="6">   
+                          <input type="password" id="senhaUsuarioConfirmar" class="form-control" placeholder="Confirmar a Senha" required minlength="6" name="senhaUsuarioConfirmar">   
                       </div>
                       
                       <div class="form-group mt-5">
