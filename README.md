@@ -15,3 +15,6 @@ Validação com jQuery e envio de dados com Ajax. ~~Recepção com PHP~~
 
 # Aula05 - 08 de julho de 2019
 Cadastro de usuário no BD
+
+Aula06 - 11 de julho de 2019
+Autenticar login em cada pagina
